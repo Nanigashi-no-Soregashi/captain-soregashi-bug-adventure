@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>それがし船長 絶体絶命バグ地獄</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="stage" aria-label="それがし船長 絶体絶命バグ地獄">
+    <section id="gameWindow" class="game-window" aria-live="polite">
+      <header class="game-header">
+        <p class="status-label">SOREGASHI CAPTAIN / BUG HELL</p>
+        <h1>それがし船長 絶体絶命バグ地獄</h1>
+      </header>
+
+      <div class="scenario-panel">
+        <p id="sceneText" class="scene-text"></p>
+      </div>
+
+      <div id="choices" class="choices" aria-label="選択肢"></div>
+    </section>
+  </main>
+
+  <div id="crashScreen" class="crash-screen" aria-hidden="true">
+    <div class="crash-card">
+      <div class="crash-icon">!</div>
+      <h2>Aw, Snap!</h2>
+      <p>
+        それがし船長の重要部位が破壊されたため<br>
+        ゲームの継続が不可能になりました。
+      </p>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
